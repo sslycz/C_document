@@ -1,0 +1,39 @@
+/*
+ * test.c
+ *
+ *  Created on: 2021Äê2ÔÂ22ÈÕ
+ *      Author: hyq
+ */
+#include "test_sort.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include "sort.h"
+
+
+void sortTest(void)
+{
+#define LENGTH 11
+	int num[LENGTH];
+	int i;
+
+	srand((unsigned)time(NULL));
+	for(i = 0; i < LENGTH; i++)
+	{
+		num[i] =  rand()%1000;
+	}
+	printf("ÅÅÐòÇ°£º\n");
+	for(i = 0; i < LENGTH; i++)
+	{
+		printf("num[%d] = %d\n", i, num[i]);
+	}
+//	selectSort(num, LENGTH);//Ñ¡ÔñÅÅÐò
+//	insertSort(num, LENGTH);//²åÈëÅÅÐò
+	bubbleSort(num, LENGTH);//Ã°ÅÝÅÅÐò
+	printf("ÅÅÐòºó£º\n");
+	for(i = 0; i < LENGTH; i++)
+	{
+		printf("num[%d] = %d\n", i, num[i]);
+	}
+}
