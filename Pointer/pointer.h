@@ -7,7 +7,7 @@
 
 #ifndef POINTER_POINTER_H_
 #define POINTER_POINTER_H_
-#include "typeDefine.h"
+#include "../TypeDefine/typeDefine.h"
 
 void pointer_defined_test();
 

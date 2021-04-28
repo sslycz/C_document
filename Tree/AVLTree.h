@@ -2,7 +2,7 @@
 #define TREE_AVLTREE_H_
 
 
-#include "typeDefine.h"
+#include "../TypeDefine/typeDefine.h"
 
 typedef struct AVLTreeStruct{
 	int32 key;

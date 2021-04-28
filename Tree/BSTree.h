@@ -2,7 +2,7 @@
 #ifndef TREE_BSTREE_H_
 #define TREE_BSTREE_H_
 
-#include "typeDefine.h"
+#include "../TypeDefine/typeDefine.h"
 
 
 typedef struct BSTreeStruct{
